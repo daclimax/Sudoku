@@ -135,9 +135,9 @@ public class Start {
 		for (int row = 0; row < rowsAndColumns.length; row++) {
 
 			if ((row == 0) || (row == 3) || (row == 6)) {
-				System.out.print("\n    ========================================\n");
+				System.out.print("\n    =========================================\n");
 			} else {
-				System.out.print("\n    ----------------------------------------\n");
+				System.out.print("\n    -----------------------------------------\n");
 			}
 			System.out.print(" " + row + " ");
 			for (int col = 0; col < rowsAndColumns.length; col++) {
@@ -150,7 +150,7 @@ public class Start {
 			}
 			System.out.print(" || ");
 		}
-		System.out.print("\n    ========================================\n");
+		System.out.print("\n    =========================================\n");
 	}
 
 }
