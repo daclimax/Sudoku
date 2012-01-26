@@ -131,26 +131,26 @@ public class Start {
 	 */
 	public static void printPlayingField(final Integer[][] rowsAndColumns) {
 
-		System.out.print("      0   1   2   3   4   5   6   7   8  ");
+		System.out.print("       0   1   2    3   4   5    6   7   8  ");
 		for (int row = 0; row < rowsAndColumns.length; row++) {
 
 			if ((row == 0) || (row == 3) || (row == 6)) {
-				System.out.print("\n    =====================================\n");
+				System.out.print("\n    ========================================\n");
 			} else {
-				System.out.print("\n    -------------------------------------\n");
+				System.out.print("\n    ----------------------------------------\n");
 			}
 			System.out.print(" " + row + " ");
 			for (int col = 0; col < rowsAndColumns.length; col++) {
 				if ((col == 0) || (col == 3) || (col == 6)) {
-					System.out.print(" | " + (rowsAndColumns[row][col] == null ? " " : rowsAndColumns[row][col]));
+					System.out.print(" || " + (rowsAndColumns[row][col] == null ? " " : rowsAndColumns[row][col]));
 				} else {
 					System.out.print(" | " + (rowsAndColumns[row][col] == null ? " " : rowsAndColumns[row][col]));
 				}
 
 			}
-			System.out.print(" | ");
+			System.out.print(" || ");
 		}
-		System.out.print("\n    =====================================\n");
+		System.out.print("\n    ========================================\n");
 	}
 
 }
